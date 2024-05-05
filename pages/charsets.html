@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O atributo HTML charset</title>
+</head>
+<body>
+    <h2>O atributo HTML charset</h2>
+    <p>O conjunto de caracteres é especificado na <code>&lt;meta&gt;</code> tag:</p>
+    <h3>Exemplo</h3>
+    <code>&lt;meta charset="UTF-8"&gt;</code>
+    <p>A especificação HTML5 incentiva os desenvolvedores web a usar o conjunto de caracteres UTF-8.</p>
+    <p>UTF-8 cobre quase todos os caracteres e símbolos do mundo!</p>
+    <h2>O conjunto de caracteres ASCII</h2>
+    <p>ASCII foi o primeiro padrão de codificação de caracteres para a web. Definiu 128 caracteres diferentes que poderiam ser usados ​​na internet:</p>
+    <ul>
+        <li>Letras inglesas (AZ)</li>
+        <li>Números (0-9)</li>
+        <li>Caracteres especiais como ! $ + - ( ) @ &lt; &gt;.</li>
+    </ul>
+    <hr>
+    <h2>O conjunto de caracteres ANSI</h2>
+    <p>ANSI (Windows-1252) era o conjunto de caracteres original do Windows:</p>
+    <ul>
+        <li>Idêntico ao ASCII para os primeiros 127 caracteres</li>
+        <li>Caracteres especiais de 128 a 159</li>
+        <li>Idêntico ao UTF-8 de 160 a 255</li>
+    </ul>
+    <code>&lt;meta charset="Windows-1252"&gt;</code>
+    <h2>O conjunto de caracteres ISO-8859-1</h2>
+    <p>ISO-8859-1 era o conjunto de caracteres padrão para HTML 4. Este conjunto de caracteres suportava 256 códigos de caracteres diferentes. HTML 4 também suporta UTF-8.</p>
+    <ul>
+        <li>Idêntico ao ASCII para os primeiros 127 caracteres</li>
+        <li>Não usa os caracteres de 128 a 159</li>
+        <li>Idêntico a ANSI e UTF-8 de 160 a 255</li>
+    </ul>
+    <h3>Exemplo de HTML 4</h3>
+    <code>&lt;meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"&gt;</code>
+    <h3>Exemplo de HTML 5</h3>
+    <code>&lt;meta charset="ISO-8859-1"&gt;</code>
+    <hr>
+    <h2>O conjunto de caracteres UTF-8</h2>
+    <p>É idêntico ao ASCII para os valores de 0 a 127</p>
+    <p>Não usa os caracteres de 128 a 159</p>
+    <p>Idêntico ao ANSI e 8859-1 de 160 a 255</p>
+    <p>Continua do valor 256 até 10.000 caracteres</p>
+    <code>&lt;meta charset="UTF-8"&gt;</code>
+
+</body>
+</html>

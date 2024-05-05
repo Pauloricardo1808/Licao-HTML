@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h2>Elemento &lt;form&gt;</h2>
+    <p>O elemento HTML &lt;form&gt; é usado para criar um formulário HTML para entrada do usuário:</p>
+    <form>
+        .
+        Elementos do formulário
+        .
+    </form>
+    <hr>
+    <h2>O elemento &lt;label&gt;</h2>
+    <p>Observe o uso do &lt;p&gt;elemento no exemplo acima.</p>
+    <p>O &lt;label&gt;elemento define um rótulo para muitos elementos do formulário.</p>
+    <p>O &lt;label&gt;elemento é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada.</p>
+    <p>O &lt;label&gt;elemento também ajuda usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do &lt;p&gt;elemento, ele alterna o botão de opção/caixa de seleção.</p>
+    <p>O foratributo da &lt;label&gt;tag deve ser igual ao idatributo do &lt;input&gt; elemento para uni-los.</p>
+<hr>
+
+    <h2>O elemento &lt;input&gt;</h2>
+    <p>O elemento HTML &lt;input&gt; é o elemento de formulário mais usado.</p>
+    <p>Um &lt;input&gt; elemento pode ser exibido de várias maneiras, dependendo do type atributo.</p>
+    <p>aqui estão alguns exemplos:</p>
+    <h2><code>&lt;input type="texto"&gt;</code></h2>
+    <p>Exibe um campo de entrada de texto de linha única</p>
+    <code>&lt;input type="text" placeholder="Digite seu texto aqui"&gt;</code><br><br>
+    <input type="text" placeholder="Digite seu texto aqui">
+
+    <h2><code>&lt;input type="rádio"&gt;</code></h2>
+    <p>Exibe um botão de opção (para selecionar uma das muitas opções)</p>
+    <code>&lt;input type="radio" id="option1" name="option" value="option1"&gt;
+    &lt;label for="option1">Opção 1&lt;/label&gt;<br>
+    &lt;input type="radio" id="option2" name="option" value="option2"&gt;
+    &lt;label for="option2">Opção 2&lt;/label&gt;<br></code><br>
+    <input type="radio" id="option1" name="option" value="option1">
+    <label for="option1">Opção 1</label><br>
+    <input type="radio" id="option2" name="option" value="option2">
+    <label for="option2">Opção 2</label><br>
+
+    <h2><code>&lt;input type="caixa de seleção"&gt;</code></h2>
+    <p>Exibe uma caixa de seleção (para selecionar zero ou mais dentre muitas opções)</p>
+    <code>&lt;input type="checkbox" id="option3" name="option3" value="option3"&gt;
+    &lt;label for="option3">Opção 3&lt;/label&gt;<br>
+    &lt;input type="checkbox" id="option4" name="option4" value="option4"&gt;
+    &lt;label for="option4">Opção 4&lt;/label&gt;<br></code><br>
+    <input type="checkbox" id="option3" name="option3" value="option3">
+    <label for="option3">Opção 3</label><br>
+    <input type="checkbox" id="option4" name="option4" value="option4">
+    <label for="option4">Opção 4</label><br>
+
+    <h2><code>&lt;input type="enviar"&gt;</code></h2>
+    <p>Exibe um botão enviar (para enviar o formulário)</p>
+    <code>&lt;input type="submit" value="Enviar"&gt;</code><br><br>
+    <input type="submit" value="Enviar">
+
+    <h2><code>&lt;input type="botão"&gt;</code></h2>
+    <p>Exibe um botão clicável</p>
+    <code>&lt;input type="button" value="Clique Aqui"&gt;</code><br><br>
+    <input type="button" value="Clique Aqui">

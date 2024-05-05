@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form Attributes</title>
+</head>
+<body>
+
+<h2>O atributo de ação</h2>
+<p>O actionatributo define a ação a ser executada quando o formulário for enviado.</p>
+<p>Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar.</p>
+<p>No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado “action_page.php”. Este arquivo contém um script do lado do servidor que trata os dados do formulário:</p>
+<code>
+    &lt;form action="/action_page.php"&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+    &lt;input type="text" id="fname" name="fname" value="John"&gt;<br>
+    &lt;label for="lname"&gt;Last name:&lt;/label&gt;<br>
+    &lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+</code>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>O atributo alvo</h2>
+<p>O targetatributo especifica onde exibir a resposta recebida após o envio do formulário.</p>
+<p>O targetatributo pode ter um dos seguintes valores:</p>
+<ul>
+  <li><strong>_blank:</strong> A resposta é exibida em uma nova janela ou aba</li>
+  <li><strong>_self:</strong> A resposta é exibida na janela atual</li>
+  <li><strong>_parent:</strong> A resposta é exibida no quadro pai</li>
+  <li><strong>_top:</strong> A resposta é exibida no corpo completo da janela</li>
+  <li><strong>framename:</strong> A resposta é exibida em um iframe nomeado</li>
+</ul>
+<p>O valor padrão _selfsignifica que a resposta será aberta na janela atual.</p>
+
+<h2>O Atributo Método</h2>
+<p>O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.</p>
+<p>Os dados do formulário podem ser enviados como variáveis de URL (com method="get") ou como pós-transação HTTP (com method="post").</p>
+<p>O método HTTP padrão ao enviar dados de formulário é GET.</p>
+<p>Exemplo:</p>
+<p>Este exemplo usa o método GET ao enviar os dados do formulário:</p>
+<code>&lt;form action="/action_page.php" target="_blank"&gt;&lt;/form&gt;</code> 
+<form action="/action_page.php" target="_blank"></form> 
+
+<p>Este exemplo usa o método POST ao enviar os dados do formulário:</p>
+<form action="/action_page.php" method="post"></form>
+
+<h2>O atributo de preenchimento automático</h2>
+<p>O autocompleteatributo especifica se um formulário deve ter o preenchimento automático ativado ou desativado.</p>
+<p>Quando o preenchimento automático está ativado, o navegador completa automaticamente os valores com base nos valores inseridos anteriormente pelo usuário.</p>
+<p>Exemplo:</p>
+<p>Um formulário com preenchimento automático ativado:</p>
+<form action="/action_page.php" autocomplete="on"></form>
+
+<h2>O Atributo Novalidate</h2>
+<p>O novalidateatributo é um atributo booleano.</p>
+<p>Quando presente, especifica que os dados do formulário (entrada) não devem ser validados quando submetidos.</p>
+<p>Exemplo:</p>
+<p>Um formulário com um atributo novalidate:</p>
+<form action="/action_page.php" novalidate></form>
+
+</body>
+</html>

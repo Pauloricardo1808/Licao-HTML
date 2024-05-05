@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block Elements and Inline Elements</title>
+</head>
+<body>
+    <h2>Elementos em Nível de Bloco</h2>
+    <p>Um elemento em nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.</p>
+    <p>Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita tanto quanto possível).</p>
+    <p>Dois elementos de bloco comumente usados ​são: <code>&lt;p&gt;</code> e <code>&lt;div&gt;</code>.</p>
+    <p>O <code>&lt;p&gt;</code> elemento define um parágrafo em um documento HTML.</p>
+    <p>O <code>&lt;div&gt;</code> elemento define uma divisão ou seção em um documento HTML.</p>
+    <p>Exemplo:</p>
+<pre>
+    &lt;p style="border: 1px solid black"&gt;Hello World&lt;/p&gt;
+    &lt;div style="border: 1px solid black"&gt;Hello World&lt;/div&gt;
+</pre>
+    <p style="border: 1px solid black">Hello World</p>
+    <div style="border: 1px solid black">Hello World</div>
+
+    <h2>Elementos Embutidos</h2>
+    <p>Um elemento embutido não começa em uma nova linha.</p>
+    <p>Um elemento embutido ocupa apenas a largura necessária.</p>
+    <p>Este é um elemento <code>&lt;span&gt;</code> dentro de um parágrafo.</p>
+    <p>&lt;p&gt;This is an inline span &lt;span style="border: 1px solid black"&gt;Hello World&lt;/span&gt; element inside a paragraph.&lt;/p&gt;</p>
+    <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+    <h2>O elemento &lt;div&gt;</h2>
+    <p>O <code>&lt;div&gt;</code> elemento é frequentemente usado como contêiner para outros elementos HTML.</p>
+    <p>O <code>&lt;div&gt;</code> elemento não possui atributos obrigatórios, mas <code>style</code>, <code>class</code> e <code>id</code> são comuns.</p>
+    <p>Quando usado junto com CSS, o <code>&lt;div&gt;</code> elemento pode ser usado para estilizar blocos de conteúdo:</p>
+    <pre>
+        &lt;div style="background-color:black;color:white;padding:20px;"&gt;
+        &lt;h2&gt;London&lt;/h2&gt;
+        &lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+        &lt;p&gt;Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.&lt;/p&gt;
+      &lt;/div&gt;
+    </pre>
+    <div style="background-color:black;color:white;padding:20px;">
+      <h2>London</h2>
+      <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div>
+
+    <h2>O elemento &lt;span&gt;</h2>
+    <p>O <code>&lt;span&gt;</code> elemento é um contêiner embutido usado para marcar uma parte de um texto ou parte de um documento.</p>
+    <p>O <code>&lt;span&gt;</code> elemento não possui atributos obrigatórios, mas <code>style</code>, <code>class</code> e <code>id</code> são comuns.</p>
+    <p>Quando usado junto com CSS, o <code>&lt;span&gt;</code> elemento pode ser usado para estilizar partes do texto:</p>
+    <h1>The span element</h1>
+    <p>&lt;p&gt;My mother has &lt;span style="color:blue;font-weight:bold;"&gt;blue&lt;/span&gt; eyes and my father has &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;dark green&lt;/span&gt; eyes.&lt;/p&gt;</p>
+    <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+</body>
+</html>

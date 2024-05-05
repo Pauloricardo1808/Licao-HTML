@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento HTML &lt;section&gt;</title>
+</head>
+<body>
+    <header>
+        <h1>Elemento HTML &lt;section&gt;</h1>
+        <p>O elemento &lt;section&gt; define uma seção em um documento. De acordo com a documentação HTML da W3C: "Uma seção é um agrupamento temático de conteúdo, geralmente com um cabeçalho".</p>
+        <p>Exemplos de onde o elemento &lt;section&gt; pode ser usado:</p>
+        <pre>
+    &lt;ul&gt;
+    &lt;li&gt;Capítulos&lt;/li&gt;
+    &lt;li&gt;Introdução&lt;/li&gt;
+    &lt;li&gt;Itens de notícias&lt;/li&gt;
+    &lt;li&gt;Informações de contato&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Uma página da web geralmente pode ser dividida em seções para introdução, conteúdo e informações de contato.&lt;/p&gt;
+
+&lt;section&gt;
+    &lt;h2&gt;WWF&lt;/h2&gt;
+    &lt;p&gt;O World Wide Fund for Nature (WWF) é uma organização internacional que trabalha em questões relacionadas à conservação, pesquisa e restauração do meio ambiente, anteriormente denominada World Wildlife Fund. O WWF foi fundado em 1961.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h2&gt;Símbolo do Panda do WWF&lt;/h2&gt;
+    &lt;p&gt;O Panda se tornou o símbolo do WWF. O conhecido logotipo do panda do WWF originou-se de um panda chamado Chi Chi, que foi transferido do Zoológico de Pequim para o Zoológico de Londres no mesmo ano da fundação do WWF.&lt;/p&gt;
+&lt;/section&gt;
+        </pre>
+        <h3>Resultado</h3>
+        <ul>
+            <li>Capítulos</li>
+            <li>Introdução</li>
+            <li>Itens de notícias</li>
+            <li>Informações de contato</li>
+        </ul>
+        <p>Uma página da web geralmente pode ser dividida em seções para introdução, conteúdo e informações de contato.</p>
+    </header>
+
+    <section>
+        <h2>WWF</h2>
+        <p>O World Wide Fund for Nature (WWF) é uma organização internacional que trabalha em questões relacionadas à conservação, pesquisa e restauração do meio ambiente, anteriormente denominada World Wildlife Fund. O WWF foi fundado em 1961.</p>
+    </section>
+
+    <section>
+        <h2>Símbolo do Panda do WWF</h2>
+        <p>O Panda se tornou o símbolo do WWF. O conhecido logotipo do panda do WWF originou-se de um panda chamado Chi Chi, que foi transferido do Zoológico de Pequim para o Zoológico de Londres no mesmo ano da fundação do WWF.</p>
+    </section>
+    <header>
+        <hr>
+        <h1>Elemento HTML &lt;article&gt;</h1>
+        <p>O elemento &lt;article&gt; especifica conteúdo independente e autônomo. Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site.</p>
+        <p>Exemplos de onde o elemento &lt;article&gt; pode ser usado:</p>
+        <ul>
+            <li>Postagens no fórum</li>
+            <li>Postagens no blog</li>
+            <li>Comentários do usuário</li>
+            <li>Cartões de produto</li>
+            <li>Artigos de jornal</li>
+        </ul>
+    </header>
+    <p>Exemplo</p>
+    <pre>
+        &lt;article&gt;
+  &lt;h2&gt;Google Chrome&lt;/h2&gt;
+  &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article&gt;
+  &lt;h2&gt;Mozilla Firefox&lt;/h2&gt;
+  &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article&gt;
+  &lt;h2&gt;Microsoft Edge&lt;/h2&gt;
+  &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p&gt;
+&lt;/article&gt;
+    </pre>
+<h3>Resultado</h3>
+    <article>
+        <h2>Google Chrome</h2>
+        <p>O Google Chrome é um navegador da web desenvolvido pela Google, lançado em 2008. O Chrome é o navegador da web mais popular do mundo atualmente!</p>
+    </article>
+
+    <article>
+        <h2>Mozilla Firefox</h2>
+        <p>O Mozilla Firefox é um navegador de código aberto desenvolvido pela Mozilla. O Firefox é o segundo navegador da web mais popular desde janeiro de 2018.</p>
+    </article>
+
+    <article>
+        <h2>Microsoft Edge</h2>
+        <p>O Microsoft Edge é um navegador da web desenvolvido pela Microsoft, lançado em 2015. O Microsoft Edge substituiu o Internet Explorer.</p>
+    </article>
+    <hr>
+
+      <h1>Elemento HTML &lt;cabeçalho&gt;</h1>
+      <p>O &lt;header&gt;elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.</p>
+      
+      <p>Um &lt;header&gt;elemento normalmente contém:</p>
+      
+      <p>um ou mais elementos de título (&lt;h1&gt; - &lt;h6&gt;)</p>
+      <p>logotipo ou ícone</p>
+      <p>informações de autoria</p>
+      <p>Nota: Você pode ter vários &lt;header&gt;elementos em um documento HTML. No entanto, &lt;header&gt;não pode ser colocado dentro de um &lt;footer&gt;ou &lt;address&gt;outro &lt;header&gt;elemento.</p>
+      
+      <p>Exemplo</p>
+      <p>Um cabeçalho para um &lt;artigo&gt;:</p> 
+      <pre>
+        &lt;article&gt;
+  &lt;header&gt;
+    &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;
+    &lt;p&gt;WWF's mission:&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.&lt;/p&gt;
+&lt;/article&gt;
+      </pre>
+      <h3>Resultado</h3>
+      
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+<header>
+    <hr>
+    <h1>Elemento HTML &lt;aside&gt;</h1>
+    <p>O elemento &lt;aside&gt; define algum conteúdo além daquele em que está colocado (como uma barra lateral). O conteúdo dentro de &lt;aside&gt; deve estar indiretamente relacionado ao conteúdo circundante.</p>
+</header>
+<pre>
+    &lt;main&gt;
+    &lt;p&gt;Minha família e eu visitamos o Epcot Center neste verão. O clima estava bom e o Epcot foi incrível! Tive um ótimo verão junto com minha família!&lt;/p&gt;
+    &lt;aside&gt;
+        &lt;h4&gt;Epcot Center&lt;/h4&gt;
+        &lt;p&gt;O Epcot é um parque temático no Walt Disney World Resort que apresenta atrações emocionantes, pavilhões internacionais, fogos de artifício premiados e eventos especiais sazonais.&lt;/p&gt;
+    &lt;/aside&gt;
+&lt;/main&gt;
+</pre>
+<h3>Resultado</h3>
+<main>
+    <p>Minha família e eu visitamos o Epcot Center neste verão. O clima estava bom e o Epcot foi incrível! Tive um ótimo verão junto com minha família!</p>
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>O Epcot é um parque temático no Walt Disney World Resort que apresenta atrações emocionantes, pavilhões internacionais, fogos de artifício premiados e eventos especiais sazonais.</p>
+    </aside>
+</main>
+</body>
+</html>

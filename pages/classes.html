@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+.note {
+  font-size: 120%;
+  color: red;
+}
+.main {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <h2>Usando o atributo class</h2>
+<p>O atributo <code>class</code> é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.</p>
+<p>No exemplo a seguir temos três <code>&lt;div&gt;</code> elementos com um atributo <code>class</code> com o valor “cidade”. Todos os três <code>&lt;div&gt;</code> elementos serão estilizados igualmente de acordo com a definição de estilo da classe <code>.city</code> na seção principal:</p>
+<pre>
+    &lt;h2&gt;London&lt;/h2&gt;
+    &lt;p&gt;London is the capital of England.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="city"&gt;
+    &lt;h2&gt;Paris&lt;/h2&gt;
+    &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="city"&gt;
+    &lt;h2&gt;Tokyo&lt;/h2&gt;
+    &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+  &lt;/div&gt;
+</pre>
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<h2>No exemplo a seguir temos dois <code>&lt;span&gt;</code> elementos com um atributo <code>class</code> com o valor “nota”.</h2>
+
+<p>Ambos <code>&lt;span&gt;</code> os elementos serão estilizados igualmente de acordo com a definição de estilo da classe <code>.note</code> na seção head:</p>
+&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+<h1>A sintaxe da classe</h1>
+<p>Para criar uma classe; escreva um ponto final (.), seguido por um nome de classe. Em seguida, defina as propriedades CSS entre chaves {}:</p>
+<pre>
+    &lt;h2 class="city"&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+</pre>
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+ <h1>Várias aulas</h1>
+ <p>Os elementos HTML podem pertencer a mais de uma classe.</p>
+ <p>Para definir múltiplas classes, separe os nomes das classes com um espaço, por exemplo, <div class="city main">. O elemento será estilizado de acordo com todas as classes especificadas.</p>
+ <p>No exemplo a seguir, o primeiro <h2>elemento pertence à cityclasse e também à mainclasse, e obterá os estilos CSS de ambas as classes: </p>
+ <h2>Exemplo</h2>
+<pre>
+    &lt;h2 class=&quot;city main&quot;&gt;London&lt;/h2&gt;
+ &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;
+ &lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;
+</pre>
+ <h2 class="city main">London</h2>
+ <h2 class="city">Paris</h2>
+ <h2 class="city">Tokyo</h2>
+<h1>Uso do atributo de classe em JavaScript</h1>
+<pre>
+    O nome da classe também pode ser usado pelo JavaScript para executar determinadas tarefas para elementos específicos.
+    JavaScript pode acessar elementos com um nome de classe específico com o getElementsByClassName()método:
+</pre>
+<h2>Exemplo</h2>
+<p>Clique em um botão para ocultar todos os elementos com o nome de classe “cidade”:</p>
+<pre>
+    &lt;button onclick=&quot;myFunction()&quot;&gt;Hide elements&lt;/button&gt;
+
+&lt;h2 class=&quot;city&quot;&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+
+&lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+
+&lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+  var x = document.getElementsByClassName(&quot;city&quot;);
+  for (var i = 0; i &lt; x.length; i++) {
+    x[i].style.display = &quot;none&quot;;
+  }
+}
+&lt;/script&gt;
+</pre>
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela HTML</title>
+</head>
+<body>
+    <h2>Definindo uma Tabela HTML</h2>
+    <p>Uma tabela em HTML consiste em células de tabela dentro de linhas e colunas.</p>
+    
+    <h3>Exemplo</h3>
+    <p>Uma tabela HTML simples:</p>
+    <pre>
+        &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Empresa&lt;/th&gt;
+            &lt;th&gt;Contato&lt;/th&gt;
+            &lt;th&gt;País&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+            &lt;td&gt;Maria Anders&lt;/td&gt;
+            &lt;td&gt;Alemanha&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+            &lt;td&gt;Francisco Chang&lt;/td&gt;
+            &lt;td&gt;México&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <table>
+        <tr>
+            <th>Empresa</th>
+            <th>Contato</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Alemanha</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>México</td>
+        </tr>
+    </table>
+    
+    <h3>Células da Tabela</h3>
+    <p>Cada célula da tabela é definida por uma tag &lt;td&gt; e uma tag &lt;/td&gt;.</p>
+    <p>td significa dados da tabela.</p>
+    <p>Tudo entre &lt;td&gt; e &lt;/td&gt; é o conteúdo da célula da tabela.</p>
+    <p>Exemplo:</p>
+    <pre>
+        &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <table>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+    </table>
+    
+    <h3>Linhas da Tabela</h3>
+    <p>Cada linha da tabela começa com uma tag &lt;tr&gt; e termina com uma tag &lt;/tr&gt;.</p>
+    <p>tr significa linha da tabela.</p>
+    <p>Exemplo:</p>
+    <pre>
+        &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;14&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <table>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+    
+    <h3>Cabeçalhos da Tabela</h3>
+    <p>Às vezes você quer que suas células sejam células de cabeçalho da tabela. Nestes casos, use a tag &lt;th&gt; em vez da tag &lt;td&gt;.</p>
+    <p>th significa cabeçalho da tabela.</p>
+    <p>Examplo:</p>
+    <pre>
+        &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Pessoa 1&lt;/th&gt;
+            &lt;th&gt;Pessoa 2&lt;/th&gt;
+            &lt;th&gt;Pessoa 3&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;14&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <table>
+        <tr>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+        </tr>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+</body>
+</html>

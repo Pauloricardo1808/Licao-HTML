@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iframe Example</title>
+</head>
+<body>
+
+<iframe src="attributes.html" title="Iframe Example"></iframe>
+
+<p>Use os atributos <code>height</code> e <code>width</code> para especificar o tamanho do iframe.</p>
+
+<h3>Exemplo:</h3>
+<p><code>&lt;iframe src="attributes.html" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;</code></p>
+<iframe src="attributes.html" height="200" width="300" title="Iframe Example"></iframe>
+
+<p>Ou você pode adicionar o atributo <code>style</code> e usar o CSS <code>height</code> e <code>width</code> como propriedades:</p>
+
+<h3>Exemplo:</h3>
+<p><code>&lt;iframe src="attributes.html" style="height:200px;width:300px;" title="Iframe Example"&gt;&lt;/iframe&gt;</code></p>
+<p><iframe src="attributes.html" style="height:200px;width:300px;" title="Iframe Example"></iframe></p>
+
+<p>Para remover a borda, adicione o atributo <code>style</code> e use a propriedade CSS <code>border</code>:</p>
+
+<h3>Exemplo:</h3>
+<p><code>&lt;iframe src="attributes.html" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;</code></p>
+<p><iframe src="attributes.html" style="border:none;" title="Iframe Example"></iframe></p>
+
+<p>Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:</p>
+
+<h3>Exemplo:</h3>
+<p><code>&lt;iframe src="attributes.html" style="border:2px solid red;" title="Iframe Example"&gt;&lt;/iframe&gt;</code></p>
+<p><iframe src="attributes.html" style="border:2px solid red;" title="Iframe Example"></iframe></p>
+
+<p>Um iframe pode ser usado como quadro de destino para um link.</p>
+
+<p>O <code>target</code> atributo do link deve referir-se ao <code>name</code> atributo do iframe:</p>
+
+<h3>Exemplo:</h3>
+<p><code>&lt;iframe src="attributes.html" name="iframe_a" title="Iframe Example"&gt;&lt;/iframe&gt;</code></p>
+<p><iframe src="attributes.html" name="iframe_a" title="Iframe Example"></iframe></p>
+
+<p><a href="https://www.youtube.com" target="iframe_a">Youtube</a></p>
+
+</body>
+</html>

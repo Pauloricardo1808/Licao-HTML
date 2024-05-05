@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos HTML</title>
+</head>
+<body>
+    <h1>Atributos HTML</h1>
+    <p>Todos os elementos HTML podem ter atributos</p>
+    <p>Os atributos fornecem informações adicionais sobre os elementos</p>
+    <p>Os atributos são sempre especificados na tag inicial</p>
+    <p>Os atributos geralmente vêm em pares nome/valor como: nome="valor"</p>
+
+    <h2>O atributo href</h2>
+    <p>A &lt;a&gt; tag define um hiperlink. O href atributo especifica o URL da página para a qual o link leva:</p>
+    <pre>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</pre>
+    <p>Você aprenderá mais sobre links em nosso capítulo Links HTML.</p>
+
+    <h2>O atributo src</h2>
+    <p>A &lt;img&gt; tag é usada para incorporar uma imagem em uma página HTML. O src atributo especifica o caminho para a imagem a ser exibida:</p>
+    <pre>&lt;img src="img_girl.jpg"&gt;</pre>
+    <p>Existem duas maneiras de especificar o URL no src atributo:</p>
+    <ol>
+        <li>URL absoluta – Links para uma imagem externa hospedada em outro site. Exemplo: src="https://www.w3schools.com/images/img_girl.jpg".</li>
+        <li>URL relativo - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem barra, será relativo à página atual. Exemplo: src="img_girl.jpg". Se o URL começar com uma barra, será relativo ao domínio. Exemplo: src="/images/img_girl.jpg".</li>
+    </ol>
+    <p>Dica: quase sempre é melhor usar URLs relativos. Eles não serão quebrados se você mudar de domínio.</p>
+
+    <h2>Os atributos de largura e altura</h2>
+    <p>A &lt;img&gt; tag também deve conter os atributos width e height, que especificam a largura e a altura da imagem (em pixels):</p>
+    <pre>&lt;img src="img_girl.jpg" width="500" height="600"&gt;</pre>
+
+    <h2>O atributo alternativo</h2>
+    <p>O atributo obrigatório alt para a &lt;img&gt; tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, a um erro no src atributo ou ao usuário usar um leitor de tela.</p>
+    <pre>&lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;</pre>
+    <p>Exemplo</p>
+    <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
+    <pre>&lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;</pre>
+
+    <h2>O atributo de estilo</h2>
+    <p>O atributo style é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+    <pre>&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</pre>
+    <p>Você aprenderá mais sobre estilos em nosso capítulo Estilos HTML.</p>
+
+    <h2>O atributo lang</h2>
+    <p>Você deve sempre incluir o atributo lang dentro da &lt;html&gt; tag, para declarar o idioma da página web. O objetivo é ajudar os mecanismos de pesquisa e navegadores.</p>
+    <p>O exemplo a seguir especifica o inglês como o idioma:</p>
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    <p>Os códigos de país também podem ser adicionados ao código do idioma no atributo lang. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.</p>
+    <p>O exemplo a seguir especifica inglês como idioma e Estados Unidos como país:</p>
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    <p>Você pode ver todos os códigos de idioma em nossa Referência de código de idioma HTML.</p>
+
+    <h2>O atributo do título</h2>
+    <p>O atributo title define algumas informações extras sobre um elemento.</p>
+    <p>O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
+    <pre>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</pre>
+    <p>Sugerimos: sempre use atributos em minúsculas</p>
+    <p>O padrão HTML não exige nomes de atributos em letras minúsculas.</p>
+    <p>O atributo title (e todos os outros atributos) podem ser escritos em letras maiúsculas ou minúsculas, como title ou TITLE.</p>
+</body>
+</html>

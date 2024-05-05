@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Favicon</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <h1>Como Adicionar um Favicon em HTML</h1>
+    <p>Você pode usar qualquer imagem que desejar como favicon. Você também pode criar seu próprio favicon em sites como <a href="https://www.favicon.cc">https://www.favicon.cc</a>.</p>
+    <p>Para adicionar um favicon ao seu site, salve sua imagem de favicon no diretório raiz do seu servidor web ou crie uma pasta no diretório raiz chamada imagens e salve sua imagem de favicon nesta pasta. Um nome comum para uma imagem favicon é “favicon.ico”.</p>
+    <p>Em seguida, adicione um <code>&lt;link&gt;</code> elemento ao seu arquivo “index.html”, após o <code>&lt;title&gt;</code> elemento, assim:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Título da Minha Página&lt;/title&gt;
+  &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Este é um Título&lt;/h1&gt;
+&lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <p>Agora salve o arquivo “index.html” e recarregue-o em seu navegador. A guia do seu navegador agora deve exibir a imagem do seu favicon à esquerda do título da página.</p>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>O que é XHTML?</title>
+</head>
+<body>
+    <h2>O que é XHTML?</h2>
+    <p>XHTML significa Extensible Hyper Text Markup Language.</p>
+    <p>XHTML é uma versão de HTML mais rígida e baseada em XML.</p>
+    <p>XHTML é HTML definido como um aplicativo XML.</p>
+    <p>XHTML é suportado por todos os principais navegadores.</p>
+    <h3>Por que XHTML?</h3>
+    <p>XML é uma linguagem de marcação onde todos os documentos devem ser marcados corretamente (ser "bem formados").</p>
+    <p>O XHTML foi desenvolvido para tornar o HTML mais extensível e flexível para trabalhar com outros formatos de dados (como XML). Além disso, os navegadores ignoram erros nas páginas HTML e tentam exibir o site mesmo que apresente alguns erros de marcação. Portanto, o XHTML vem com um tratamento de erros muito mais rígido.</p>
+    <p>Se você deseja estudar XML, leia nosso Tutorial de XML.</p>
+    <h3>As diferenças mais importantes do HTML</h3>
+    <ul>
+        <li>&lt;!DOCTYPE&gt; é obrigatório</li>
+        <li>O atributo xmlns em &lt;html&gt; é obrigatório</li>
+        <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; e &lt;body&gt; são obrigatórios</li>
+        <li>Os elementos devem sempre estar adequadamente aninhados</li>
+        <li>Os elementos devem estar sempre fechados</li>
+        <li>Os elementos devem estar sempre em letras minúsculas</li>
+        <li>Os nomes dos atributos devem estar sempre em letras minúsculas</li>
+        <li>Os valores dos atributos devem sempre ser citados</li>
+        <li>A minimização de atributos é proibida</li>
+    </ul>
+    <h3>XHTML - &lt;!DOCTYPE ....&gt; é obrigatório</h3>
+    <p>Um documento XHTML deve ter uma declaração XHTML &lt;!DOCTYPE&gt;.</p>
+    <p>Os elementos &lt;html&gt;, &lt;head&gt;, &lt;title&gt; e &lt;body&gt; também devem estar presentes, e o atributo xmlns em &lt;html&gt; deve especificar o namespace xml do documento.</p>
+    <h3>Exemplo</h3>
+    <p>Aqui está um documento XHTML com um mínimo de tags obrigatórias:</p>
+    <code>
+    <pre>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+    &lt;title&gt;Title of document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    <p>some content here...</p>
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+</pre>
+    <hr>
+    <h2>Elementos XHTML devem ser aninhados corretamente</h2>
+    <p>Em XHTML, os elementos devem sempre estar adequadamente aninhados uns nos outros, assim:</p>
+    <p>Correto: &lt;b&gt;&lt;i&gt;Some text&lt;/i&gt;&lt;/b&gt;</p>
+    <p>Errado: &lt;b&gt;&lt;i&gt;Some text&lt;/b&gt;&lt;/i&gt;</p>
+    <hr>
+
+    <h2>Elementos XHTML devem sempre ser fechados</h2>
+    <p>Em XHTML, os elementos devem estar sempre fechados, assim:</p>
+    <p>Correto: &lt;p&gt;This is a paragraph&lt;/p&gt;</p>
+    <p>Errado: &lt;p&gt;This is a paragraph&lt;p&gt;This is another paragraph&lt;/p&gt;</p>
+    <hr>
+
+    <h2>Elementos vazios XHTML devem sempre ser fechados</h2>
+    <p>Em XHTML, os elementos vazios devem sempre ser fechados, assim:</p>
+    <p>Correto: A break: &lt;br /&gt; | A horizontal rule: &lt;hr /&gt; | An image: &lt;img src="happy.gif" alt="Happy face" /&gt;</p>
+    <p>Errado: A break: &lt;br&gt; | A horizontal rule: &lt;hr&gt; | An image: &lt;img src="happy.gif" alt="Happy face"&gt;</p>
+    <hr>
+
+    <h2>Os elementos XHTML devem estar em letras minúsculas</h2>
+    <p>Em XHTML, os nomes dos elementos devem estar sempre em letras minúsculas, assim:</p>
+    <p>Correto: &lt;body&gt; | &lt;p&gt;This is a paragraph&lt;/p&gt;</p>
+    <p>Errado: &lt;BODY&gt; |&lt;P&gt;This is a paragraph&lt;/P&gt;</p>
+        <hr>
+
+    <h2>Os nomes dos atributos XHTML devem estar em letras minúsculas</h2>
+    <p>Em XHTML, os nomes dos atributos devem estar sempre em letras minúsculas, assim:</p>
+    <p>Correto: &lt;a href="https://www.youtube.com"&gt;Visite o Youtube&lt;/a&gt;</p>
+    <p>Errado: &lt;a HREF="https://www.youtube.com"&gt;Visite o Youtube&lt;/a&gt;</p>
+    <hr>
+
+    <h2>Valores de atributos XHTML devem ser citados</h2>
+    <p>Em XHTML, os valores dos atributos devem sempre ser citados, assim:</p>
+    <p>Correto: &lt;a href="https://www.youtube.com"&gt;Visite o Youtube&lt;/a&gt;</p>
+    <p>Errado: &lt;a href=https://www.youtube.com&gt; Visite o Youtube&lt;/a&gt;</p>
+    <hr>
+
+    <h2>A minimização de atributos XHTML é proibida</h2>
+    <p>Em XHTML, a minimização de atributos é proibida, assim:</p>
+    <p>Correto: &lt;input type="checkbox" name="vehicle" value="car" checked="checked" /&gt;</p>
+    <p>Errado: &lt;input type="checkbox" name="vehicle" value="car" checked /&gt;</p>
+</body>
+</html>

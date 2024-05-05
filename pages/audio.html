@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio </title>
+</head>
+<body>
+    <h1>Áudio HTML</h1>
+    <p>O elemento HTML <audio>é usado para reproduzir um arquivo de áudio em uma página da web.</p>
+    <h2>O elemento HTML &lt;audio&gt;</h2>
+    <p>Para reproduzir um arquivo de áudio em HTML, use o &lt;audio&gt;elemento:</p>
+    <code>
+        <pre>
+            &lt;audio controls&gt;
+                &lt;source src="audio/sci-fi-sound-effect-designed-circuits-hum-24-200825.mp3" type="audio/mpeg"&gt;
+              &lt;/audio&gt;
+        </pre>
+    </code>
+    <audio controls>
+        <source src="audio/sci-fi-sound-effect-designed-circuits-hum-24-200825.mp3" type="audio/mpeg">
+      </audio>
+      <hr>
+      <h1>Audio HTML Como Funciona</h1>
+      <p>O <code>controls</code> atributo adiciona controles de áudio, como reproduzir, pausar e volume.</p>
+
+<p>O elemento <code>&lt;source&gt;</code> permite que você especifique arquivos de áudio alternativos que o navegador pode escolher. O navegador usará o primeiro formato reconhecido.</p>
+
+<p>O texto entre as tags <code>&lt;audio&gt;</code> e <code>&lt;/audio&gt;</code> só será exibido em navegadores que não suportam o <code>&lt;audio&gt;</code> elemento.</p>
+
+<h3>HTML &lt;audio&gt; Reprodução automática</h3>
+<p>Para iniciar um arquivo de áudio automaticamente, use o <code>autoplay</code> atributo:</p>
+<code>
+    <pre>
+        &lt;audio controls autoplay&gt;
+            &lt;source src="audio/sci-fi-sound-effect-designed-circuits-hum-24-200825.mp3" type="audio/mpeg"&gt;
+        &lt;/audio&gt;
+    </pre>
+</code>
+
+<audio controls autoplay>
+  <source src="audio/sci-fi-sound-effect-designed-circuits-hum-24-200825.mp3" type="audio/mpeg">
+</audio>
+  <hr>
+  <p>Para iniciar um arquivo de áudio automaticamente, use o <code>autoplay</code> atributo. Para reprodução automática sem som, adicione o <code>muted</code> atributo:</p>
+<code>
+    <pre>
+        &lt;audio controls autoplay muted&gt;
+            &lt;source src="audio/sci-fi-sound-effect-designed-circuits-hum-24-200825.mp3" type="audio/mpeg"&gt;
+          &lt;/audio&gt;
+    </pre>
+</code>
+<audio controls autoplay muted>
+  <source src="audio/sci-fi-sound-effect-designed-circuits-hum-24-200825.mp3" type="audio/mpeg">
+</audio>
+<hr>
+<h1>Formatos de Audio HTML</h1>
+<table border="1px">
+    <thead>
+      <tr>
+        <th>Browser</th>
+        <th>MP3</th>
+        <th>WAV</th>
+        <th>OGG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Edge/IE</td>
+        <td>YES</td>
+        <td>YES*</td>
+        <td>YES*</td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Firefox</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>NO</td>
+      </tr>
+      <tr>
+        <td>Opera</td>
+        <td>YES</td>
+        <td>YES</td>
+        <td>YES</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>
